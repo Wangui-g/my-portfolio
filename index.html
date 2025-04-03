@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <head>
+            <!-- Font Awesome 6 (latest version) -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          </head>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-ellipsis" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hello There! I am <span>Grace</span><br> Gikuhi from Kenya</h1>
+                </div>
+            </div>
+        </div>
+        <!--About-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>A passionate student bridging medicine and IT, with a focus on healthcare technology.I’m a Mathematics and Computer Science student with a mission to bridge technology and healthcare. My expertise in algorithms, statistics, and machine learning drives my interest in medical AI and health data science. For instance, I aspire to work on building AI-powered diagnostic tools that democratize healthcare access in underserved regions.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Medical knowledge</span><br>Basic biology/chemistry</li>
+                                <li><span>IT skills</span><br>Programming, Data analysis</li>
+                                <li><span>Soft skills</span><br>Problem-solving, teamwork, research</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020 - Current</span><br>Volunteer work at local hospitals</li>
+                                <li><span>2018 - 2020</span><br>School Projects</li>
+                                <li><span>2015 - 2018</span><br>Internship </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2015</span><br>MCS degree at JKUAT</li>
+                                <li><span>2013</span><br>The Kenya High School</li>
+                                <li><span>2010</span><br>Green Aces Preparatory School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SERVICES-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Medical field</h2>
+                        <p>Assistance in medical research and tutoring in biology/chemistry</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>IT field</h2>
+                        <p>Basic website development for clinics and data analysis for health-related research</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Blogs</h2>
+                        <p>Creating educational content on medical tech and emerging trends in medical IT</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--portfolio section-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1> 
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/bacteria.jpg">
+                        <div class="layer">
+                            <h3>Medical Project</h3>
+                            <p>A case study on How AI is Used in Diagnosing Diseases</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/bmi.jpg">
+                        <div class="layer">
+                            <h3>Healthcare Tech Project</h3>
+                            <p>Web app development: A BMI calculator and symptom checker</p>
+                            <a href="#">Download </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a> 
+            </div>
+        </div>
+
+        <!--contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" required placeholder="Your Name">
+                            <input type="email" name="Email" required placeholder="Your Email">
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 GG. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyBWiBUYSbtaR9FS_-SPq0igUvRd-6FJ8h3bjFpxkHt-4T4e1eNTpwUrvjSR9tjz-hO7w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          
+
+    </body>
+</html>
